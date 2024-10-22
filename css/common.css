@@ -1,0 +1,282 @@
+@charset 'utf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+:root {
+    font-size: 62.5%;
+    --main-color: #0e212f;
+    --main-color80: rgba(14, 33, 47, 0.8);
+    --main-color70: rgba(14, 33, 47, 0.7);
+    --main-color60: rgba(14, 33, 47, 0.6);
+    --main-color10: rgba(14, 33, 47, 0.1);
+    --title-color: #333333;
+    --text-color: #666666;
+    --white100: rgba(255, 255, 255, 1);
+    --white50: rgba(255, 255, 255, 0.5);
+    --white40: rgba(255, 255, 255, 0.4);
+    --white10: rgba(255, 255, 255, 0.1);
+    --black50: rgba(0, 0, 0, 0.5);
+    --black40: rgba(0, 0, 0, 0.4);
+    --black20: rgba(0, 0, 0, 0.2);
+    --black10: rgba(0, 0, 0, 0.1);
+}
+
+::selection {
+    background: var(--main-color);
+    color: var(--white100);
+}
+
+.inner {
+    width: 132rem;
+    width: 68.75vw;
+    margin: 0 auto;
+    /* background: #ff5; */
+}
+
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: 2.2rem/1.4 "Pretendard", sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.sec-title {
+    font-weight: 700;
+    font: 1.5 "Pretendard", sans-serif;
+    color: var(--main-color);
+}
+
+.sec-title strong {
+    font-size: 2rem;
+}
+
+.sec-title h3 {
+    font-size: 5.2rem;
+    margin-top: 1rem;
+}
+
+.btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.2rem;
+    height: 5.5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.btn-more::after {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    aspect-ratio: 1/1;
+    background: url(../img/arrow-m-right.png) no-repeat 50%;
+    margin-left: 1rem;
+}
+
+.view-more::after {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../img/arrow-m-right.png) no-repeat 50% 100%;
+    margin-left: 1rem;
+}
+
+#header {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    padding: 9rem 0 6rem 0;
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 13.6rem;
+    height: 3rem;
+    background: url(../img/logo.svg) no-repeat 50% / contain;
+    transform: rotate(90deg);
+}
+
+.util-menu {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-menu {
+    width: 4rem;
+    height: 4rem;
+    background: url(../img/menu-ico.svg) no-repeat 50% / contain;
+}
+
+.sns-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.btn-instargram {
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/sns-ico-instargram.svg) no-repeat 50% / contain;
+}
+
+.btn-facebook {
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/sns-ico-facebook.svg) no-repeat 50% / contain;
+}
+
+.foot-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.foot-list::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-16%);
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background: var(--black20);
+}
+
+.foot-info {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.foot-info a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.family {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    position: relative;
+}
+
+.family strong::after {
+    content: "";
+    display: inline-block;
+    width: 2.6rem;
+    aspect-ratio: 1/1;
+    background: url(../img/arrow-b-bottom.png) no-repeat 50% 80%;
+    margin-left: 1rem;
+}
+
+.family-list {
+    background: var(--white100);
+    border: 2px solid var(--black20);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 4.2rem;
+    position: absolute;
+    display: none;
+}
+
+.family-list li a {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.family-list.active {
+    display: block;
+}
+
+.foot-con {
+    padding: 7rem 0 9rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-con address strong {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.foot-con address p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 2.6rem;
+}
+
+.foot-con address p + p {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.accredit {
+    display: flex;
+    gap: 1rem;
+}
+
+.accredit figure {
+    width: 7.4rem;
+    aspect-ratio: 1/1;
+}
+
+.accredit figure img {
+    object-fit: contain;
+    transform: translateY(-25%);
+}
+
+.accredit p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
