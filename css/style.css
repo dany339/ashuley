@@ -121,6 +121,7 @@
 .event-tab {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 9.6rem;
 }
 
@@ -263,6 +264,16 @@
     width: 2.4rem;
     height: 2.4rem;
     border: 2px solid var(--text-color);
+    position: relative;
+}
+
+.map-filter li input.on::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color) url(../img/check-ico.png) no-repeat 50%;
+    border-radius: 5px;
 }
 
 .map-filter li label {

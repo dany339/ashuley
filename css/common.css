@@ -96,6 +96,7 @@ body {
     height: 5.5rem;
     border: 2px solid var(--main-color);
     border-radius: 5px;
+    position: relative;
 }
 
 .btn-more::after {
@@ -107,12 +108,17 @@ body {
     margin-left: 1rem;
 }
 
+.view-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .view-more::after {
     content: "";
     display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
-    background: url(../img/arrow-m-right.png) no-repeat 50% 100%;
+    background: url(../img/arrow-m-right.png) no-repeat 50% 50%;
     margin-left: 1rem;
 }
 
@@ -173,6 +179,16 @@ body {
     justify-content: space-between;
     padding: 3rem 0;
     position: relative;
+}
+
+.foot-list::before {
+    content: "";
+    position: absolute;
+    transform: translateX(-16%);
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background: var(--black20);
 }
 
 .foot-list::after {
