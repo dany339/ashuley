@@ -24,7 +24,7 @@
     background-color: var(--main-color60);
 }
 
-.visual-title {
+.main-title {
     display: block;
     width: 88rem;
     height: 19.2rem;
@@ -139,6 +139,7 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    cursor: none;
 }
 
 .event-swiper figure::after {
@@ -302,6 +303,10 @@
     background-image: url(../img/ico-map-child-m.png);
 }
 
+.map-ico li:nth-child(2).on {
+    background: var(--main-color) url(../img/ico-map-beer-w.png) no-repeat 50%;
+}
+
 .app-download {
     margin-top: 8rem;
     position: relative;
@@ -435,6 +440,11 @@
     border-radius: 10px;
     padding: 5rem 4rem;
     position: relative;
+}
+
+.app-con li:hover {
+    box-shadow: 0 0 10px rgba(250, 255, 242, 0.6);
+    transition: box-shadow 0.3s ease;
 }
 
 .app-con li dl::before {

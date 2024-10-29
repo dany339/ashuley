@@ -7,15 +7,16 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/sub.css" />
+        <link rel="stylesheet" href="./css/menu.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js" defer></script>
     </head>
     <body>
         <header id="header">
             <h1 class="logo">
-                <a href="#"><i class="hidden">Ashley</i></a>
+                <a href="index.html"><i class="hidden">Ashley</i></a>
             </h1>
             <div class="util-menu">
                 <button class="btn-menu">
@@ -29,12 +30,67 @@
                 <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
                 <button class="btn-facebook"><i class="hidden">페이스북</i></button>
             </div>
+
+            <div class="gnb">
+                <figure>
+                    <img src="./img/gnb-img.jpg" alt="하와이안 버터갈릭 슈림프,스윗 갈릭 크런치 크랩" />
+                </figure>
+                <div class="gnb-menu">
+                    <nav>
+                        <ul class="main-menu">
+                            <li>
+                                <h3>브랜드 소개</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="brand.html">브랜드 비전</a></li>
+                                    <li><a href="brand.html">브랜드 이념</a></li>
+                                    <li><a href="brand.html">브랜드 스토리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>메뉴</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="menu.html">전체메뉴</a></li>
+                                    <li><a href="menu.html">애슐리 팁</a></li>
+                                    <li><a href="menu.html">식품정보</a></li>
+                                    <li><a href="menu.html">가격 안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>혜택</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="#">SNS이벤트</a></li>
+                                    <li><a href="#">앱 사용 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>매장 찾기</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="#">매장 리스트</a></li>
+                                    <li><a href="#">지도보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>고객센터</h3>
+                                <ul class="sub-menu">
+                                    <li><a href="inquiry.html">FAQ</a></li>
+                                    <li><a href="inquiry.html">문의하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button" class="btn-close">
+                    <i class="hidden">close</i>
+                </button>
+                <a class="btn-main" href="index.html"><i class="hidden">Ashley</i></a>
+            </div>
         </header>
 
         <main id="main">
             <!-- s: visual -->
             <section class="visual">
                 <div class="inner">
+                    <strong class="bread">Home > 메뉴</strong>
                     <div class="visual-title">
                         <h2>Ashley's Menu</h2>
                         <p>클래식한 스테이크부터 트렌디한 퓨전 요리까지. 잊지 못할 식사, 지금 애슐리에서 만나보세요.</p>
@@ -57,7 +113,7 @@
                     </div>
 
                     <ul class="menu-tab">
-                        <li class="on">
+                        <li>
                             <a href="#"><p>시즌 메뉴</p></a>
                         </li>
                         <li>
@@ -75,42 +131,48 @@
                     </ul>
 
                     <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
-                    <div class="menu-con">
-                        <ul class="menu-list">
-                            <li>
-                                <figure><img src="./img/menu-list-pic1.jpg" alt="" /></figure>
-                                <p>트로피칼 그릴드 슈림프</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic2.jpg" alt="" /></figure>
-                                <p>하와아인 버터갈릭 슈림프, 스윗 갈릭 크런치 크랩</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic3.jpg" alt="" /></figure>
-                                <p>스페니쉬 뽈뽀, 새우 튀김 데마끼</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic4.jpg" alt="" /></figure>
-                                <p>핫 로제 크림 파스타</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic5.jpg" alt="" /></figure>
-                                <p>청양 크림 봉골레 스튜</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic6.jpg" alt="" /></figure>
-                                <p>오렌지 실몬 스퀴드 세비체</p>
-                            </li>
-                            <li>
-                                <figure><img src="./img/menu-list-pic7.jpg" alt="" /></figure>
-                                <p>스파이시 슈림프 디아볼라 피자</p>
-                            </li>
-                        </ul>
-                        <a href="#" class="btn-more"
-                            >선출시 매장 정보<span class="btn-more-con"
-                                ><span class="btn-more-item"></span><span class="btn-more-item"></span
-                                ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
-                        ></a>
+                    <div class="menu-cons">
+                        <div class="menu-con">
+                            <ul class="menu-list">
+                                <li>
+                                    <figure><img src="./img/menu-list-pic1.jpg" alt="" /></figure>
+                                    <p>트로피칼 그릴드 슈림프</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic2.jpg" alt="" /></figure>
+                                    <p>하와아인 버터갈릭 슈림프, 스윗 갈릭 크런치 크랩</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic3.jpg" alt="" /></figure>
+                                    <p>스페니쉬 뽈뽀, 새우 튀김 데마끼</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic4.jpg" alt="" /></figure>
+                                    <p>핫 로제 크림 파스타</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic5.jpg" alt="" /></figure>
+                                    <p>청양 크림 봉골레 스튜</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic6.jpg" alt="" /></figure>
+                                    <p>오렌지 실몬 스퀴드 세비체</p>
+                                </li>
+                                <li>
+                                    <figure><img src="./img/menu-list-pic7.jpg" alt="" /></figure>
+                                    <p>스파이시 슈림프 디아볼라 피자</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-more"
+                                >선출시 매장 정보<span class="btn-more-con"
+                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span
+                                    ><span class="btn-more-item"></span><span class="btn-more-item"></span></span
+                            ></a>
+                        </div>
+                        <div class="menu-con">안년ㅇ사ㅔ요</div>
+                        <div class="menu-con">333333</div>
+                        <div class="menu-con">444444</div>
+                        <div class="menu-con">555555555</div>
                     </div>
                 </div>
             </section>
@@ -161,65 +223,68 @@
                         </p>
                         <a href="#" class="view-more">VIEW MORE</a>
                     </div>
-                    <div class="sllergie-slider-wrap">
-                        <div class="allergie-list">
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic1.jpg" alt="" /></figure>
-                                <strong>메밀</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic2.jpg" alt="" /></figure>
-                                <strong>밀</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic3.jpg" alt="" /></figure>
-                                <strong>대두</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic4.jpg" alt="" /></figure>
-                                <strong>견과류<br /><i>(땅콩, 호두, 잣)</i></strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic5.jpg" alt="" /></figure>
-                                <strong>복숭아</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic6.jpg" alt="" /></figure>
-                                <strong>토마토</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic7.jpg" alt="" /></figure>
-                                <strong>난류</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic8.jpg" alt="" /></figure>
-                                <strong>우유</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic9.jpg" alt="" /></figure>
-                                <strong>육류<br /><i>(소, 돼지, 닭)</i></strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic10.jpg" alt="" /></figure>
-                                <strong>갑각류<i>(새우, 게)</i></strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic11.jpg" alt="" /></figure>
-                                <strong>고등어</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic12.jpg" alt="" /></figure>
-                                <strong>오징어</strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic13.jpg" alt="" /></figure>
-                                <strong>조개류<i>(굴, 전복, 홍합)</i></strong>
-                            </div>
-                            <div class="allergie-item">
-                                <figure><img src="./img/food-pic14.jpg" alt="" /></figure>
-                                <strong>아황산<br />포함식품</strong>
+                    <div class="allergie-slider-wrap">
+                        <div class="allergie-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic1.jpg" alt="" /></figure>
+                                    <strong>메밀</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic2.jpg" alt="" /></figure>
+                                    <strong>밀</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic3.jpg" alt="" /></figure>
+                                    <strong>대두</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic4.jpg" alt="" /></figure>
+                                    <strong>견과류<br /><i>(땅콩, 호두, 잣)</i></strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic5.jpg" alt="" /></figure>
+                                    <strong>복숭아</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic6.jpg" alt="" /></figure>
+                                    <strong>토마토</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic7.jpg" alt="" /></figure>
+                                    <strong>난류</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic8.jpg" alt="" /></figure>
+                                    <strong>우유</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic9.jpg" alt="" /></figure>
+                                    <strong>육류<br /><i>(소, 돼지, 닭)</i></strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic10.jpg" alt="" /></figure>
+                                    <strong>갑각류<br /><i>(새우, 게)</i></strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic11.jpg" alt="" /></figure>
+                                    <strong>고등어</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic12.jpg" alt="" /></figure>
+                                    <strong>오징어</strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic13.jpg" alt="" /></figure>
+                                    <strong>조개류<br /><i>(굴, 전복, 홍합)</i></strong>
+                                </div>
+                                <div class="swiper-slide allergie-item">
+                                    <figure><img src="./img/food-pic14.jpg" alt="" /></figure>
+                                    <strong>아황산<br />포함식품</strong>
+                                </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -234,12 +299,13 @@
                         <h3>애슐리의 가격 정보를 확인해보세요!</h3>
                     </div>
                     <div class="tab-con">
-                        <ul class="tab-item">
-                            <li class="on"><a href="#">애슐리 퀸즈</a></li>
+                        <ul class="tab-item price-tab">
+                            <li><a href="#">애슐리 퀸즈</a></li>
                             <li><a href="#">애슐리 클래식</a></li>
                             <li><a href="#">애슐리 w</a></li>
                         </ul>
                     </div>
+
                     <div class="price-con">
                         <div class="price-con-item">
                             <table>
@@ -272,6 +338,78 @@
                                         <td>7,900</td>
                                         <td>7,900</td>
                                         <td>7,900</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="price-con-item">
+                            <table>
+                                <caption>
+                                    <i class="hidden">평일런치, 평일디너, 주말·공휴일 별 애슐리 클래식 가격 정보</i>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>평일런치</th>
+                                        <th>구분</th>
+                                        <th>평일디너</th>
+                                        <th>주말·공휴일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>성인</td>
+                                        <td>13,900</td>
+                                        <td>19,900</td>
+                                        <td>19,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>초등학생</td>
+                                        <td>9,900</td>
+                                        <td>9,900</td>
+                                        <td>9,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미취학생</td>
+                                        <td>6,500</td>
+                                        <td>6,500</td>
+                                        <td>6,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="price-con-item">
+                            <table>
+                                <caption>
+                                    <i class="hidden">평일런치, 평일디너, 주말·공휴일 별 애슐리w 가격 정보</i>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>평일런치</th>
+                                        <th>구분</th>
+                                        <th>평일디너</th>
+                                        <th>주말·공휴일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>성인</td>
+                                        <td>14 ,900</td>
+                                        <td>19,900</td>
+                                        <td>19,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>초등학생</td>
+                                        <td>10,900</td>
+                                        <td>10,900</td>
+                                        <td>10,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미취학생</td>
+                                        <td>6,500</td>
+                                        <td>6,500</td>
+                                        <td>6,500</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -327,7 +465,7 @@
                     </ul>
 
                     <div class="family">
-                        <strong>FAMILY SITE</strong>
+                        <button type="button" class="btn-family">FAMILY SITE</button>
                         <ul class="family-list">
                             <li><a href="#">리미니</a></li>
                             <li><a href="#">피자몰</a></li>
